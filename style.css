@@ -1,0 +1,172 @@
+*{
+margin: 2px;
+padding: 2px;
+box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto auto auto;
+}
+
+/*header nav{
+    text-align:right; 
+}
+
+header div{
+    text-align:center;
+}*/
+.flex-container{
+    text-decoration: none;
+    background-color: #2d3047;  
+    flex-basis: 100%;
+}
+ .menu, ul, li {
+    display:inline-flex; 
+     background: #2d3047;
+     text-decoration: none; 
+     align-items: center;
+ }
+ .menu-2, li, a{
+     display:inline-flex;
+ text-decoration: none;
+   color: beige;
+   text-align: right;
+   font-family:cursive;    
+}
+
+div, .logo, img{
+    text-align:center;
+}
+
+section div{
+    color: coral;
+    font-size: 130%;
+}
+section, div, h2{
+    color: aliceblue;
+}
+
+#parrafos h4{
+     color:brown;
+    text-align: center;
+}
+
+#parrafos p{
+    color: aliceblue;
+    text-align: right;  
+}
+
+h4{
+    text-align:right;
+}
+
+h3{
+    color: rgb(236, 106, 67);
+}
+
+h4{
+    font-size: 30px;
+}
+
+section h4{
+    font-size: 30px;
+}
+
+footer ul{
+    display:inline-block;
+    background-color:rgb(204, 204, 64);
+    color:rgb(209, 0, 0); 
+    opacity: 0.8;
+}
+
+/* comienza style de gym-center ...*/
+#principal-gym, h1{
+    color:rgb(221, 227, 230);    
+}
+#categorias{
+    color:rgb(221, 227, 230);
+}
+
+form{
+    color:rgb(221, 227, 230);
+}
+#form-running{
+    color:rgb(221, 227, 230);  
+}
+
+#principal-running{
+    color:rgb(221, 227, 230)
+}
+
+#redes p{
+    color:#ff8000;
+    font-family: "comic sans MS";   
+}
+#redes ul li{
+    color:crimson;
+    font-size: 150%;
+}
+#redes a{
+    font-size: 160%;
+    color:crimson
+}
+
+h2{
+    color:rgba(221, 227, 230, 0.87); 
+    font-family: sans-serif;
+}
+/* modificaciones del html nosotros - section */
+
+#nosotros-parrafo{
+    color:rgb(221, 227, 230);
+    width:900px;
+    height:80px;
+    margin:2px;
+}
+
+.flex {
+	border: solid 1px rgb(226, 128, 15);
+	display: flex;
+}
+.center-j{
+	justify-content: center;
+}
+
+/*#nav-nosotros ul li{
+display: inline-block;
+border: solid red 1px; 
+margin: 0%; 
+background-color:beige;
+opacity: 0.8;  
+}*/
+
+    
+#principal-index, h1{
+    color: coral;
+}
+
+/* ejercicios por grupo muscular */
+#espalda{
+    color:aquamarine;
+}
+
+@media (max-width: 300px){
+    .flex-container{
+flex-direction:column;
+flex-basis: 100%;
+}
+
+.flex-container .menu{
+    flex-basis: 100%;
+    flex-direction:column;
+}
+
+.flex-contaniner .menu-2{
+    flex-direction:column;
+    flex-basis: 100%;
+}
+
+}
