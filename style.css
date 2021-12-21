@@ -1,22 +1,22 @@
 body{
     background-color:black; 
      margin: 5px;
-    padding: 5px;
+    padding: 2px;
     /*box-sizing: border-box;*/
 }
 
 .grid {
 	border: solid 1px white;
 	display: grid;
-	grid-template-rows: 75px 3fr 3fr 75px;
-	grid-template-columns: 20% auto 20%;
+	grid-template-rows: auto 3fr 3fr auto;
+	grid-template-columns: 25% 25% 25%;
 	grid-template-areas: 
 	"nav nav nav"
 	"header header header"
     "section1 section2 section3"
     "footer footer footer";
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;  
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;  
   }
  
   .borde { 
@@ -43,25 +43,33 @@ body{
   }
   
 
-  /*Fin de GRID / inicio Flexbox*/
+  /*Fin de GRID / inicio Flexbox */
+
 
 .flex-container{
     text-decoration: none;
-    background-color: #2d3047;  
+    background-color:#2d3047;  
     flex-basis: 100%;
    
 }
- .menu, ul, li {
+ .menu {
     display:inline-flex; 
-     background: #2d3047;
-     text-decoration: none; 
+    text-decoration: none; 
  }
  .menu-2, ul, li, a{
-     display:inline-flex;
- text-decoration:none;
+    display:inline-flex;
+    text-decoration:none;
    color: beige;
    font-family:Verdana, cursive;
-   word-spacing: 5px;
+}
+
+.btn-ghost.secundary{
+    background-color:#2d3047;
+    margin: 2px 2px;
+    padding: 3px 5px;
+    color: var(--white);
+    border: solid 2px white;
+    opacity: 0.8;
 }
 
 div, .logo, img{
@@ -86,26 +94,13 @@ section, div, h2{
     text-align: right;  
 }
 
-h4{
-    text-align:right;
-}
-
-h3{
-    color: rgb(236, 106, 67);
-}
-
-h4{
-    font-size: 30px;
-}
 
 section h4{
     font-size: 30px;
 }
 
-footer ul{
-    display:inline-block;
-    color:rgb(209, 0, 0); 
-    opacity: 0.8;
+footer{
+background-color: #2d3047; 
 }
 
 /* comienza style de gym-center ...*/
@@ -140,30 +135,27 @@ form{
     color:crimson
 }
 
-h2{
-    color:rgba(221, 227, 230, 0.87); 
-    font-family: sans-serif;
-}
-
 /* modificaciones del html nosotros - section */
 
-#nosotros-parrafo{
-    color:rgb(221, 227, 230);
-    width:900px;
-    height:80px;
-    margin:2px;
+.principal-nosotros, ul, li{
+    color:cornflowerblue;
+    font-size: 110%;
+    
 }
 
-.flex {
-	border: solid 5px rgb(226, 128, 15);
-	display: flex;
+/*index*/
+#principal-index{
+    text-align: center;
 }
-.center-j{
-	justify-content:center;
-}
-    
-#principal-index, h1{
+
+#principal-index, .h1{
     color: coral;
+}
+#principal-index, .h2{
+color: dimgrey;
+}
+#principal-index, .h3{
+    color: rgb(241, 167, 139);
 }
 
 /* ejercicios por grupo muscular */
