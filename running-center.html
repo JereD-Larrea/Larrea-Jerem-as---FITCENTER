@@ -10,36 +10,45 @@
 </head>
   
 <body>
-  <header class="item borde">
-    <div class="grid">
-      <nav class="item borde"> 
-        <div class="flex-container">
-          <div class="menu1-2">
-              <div class="menu"> 
-                  <ul>
-                     <li> <a href="gym-center.html"> <button class> GYM CENTER  </button> </a> </li>
-                     <li> <a href="running-center.html"> <button class> RUNNING </button> </a> </li>
-                     <li> <a href="servicios.html"> <button class> SERVICIOS    </button> </a> </li> 
-                  </ul> 
-              </div>
-       
-              <div class="menu-2">
-                  <div class="btn-item">  
-                       <ul>
-                          <li> <a href="index.html" class="btn-ghost secundary"> Inicio </a> </li> 
-                          <li> <a href="contacto.html" class="btn-ghost secundary"> Contacto  </a> </li> 
-                          <li> <a href="nosotros.html" class="btn-ghost secundary">  Nosotros </a> </li> 
-                      </ul>
-                  </div>
-              </div> 
-           </div>   
-        </div> 
-      </nav>
-   </div>
-             
-            <div id="logo"> <img src="/logos/logo-rojo-y-blanco.jpg"> </div>
-            <div class="titulo-y-parrafo">
-                <div id="fuente-google2"> FIT CENTER </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/logos/minilogo.jpg" class="img-fluid" width="70px" height="70px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="gym-center.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                GYM CENTER
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="gym-center.html">Gym</a></li>
+                <li><a class="dropdown-item" href="ejercicios-por-grupo-muscular.html">Ejercicios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="running-center.html">RUNNING</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="logo"> <img src="/logos/logo-rojo-y-blanco.jpg"> </div>   
+    <p class="h1"> <div id="fuente-google2"> FIT CENTER </div> </p> 
   </header>
    
     
@@ -55,19 +64,27 @@
     </section>
         
     <section id="categorias">
-        <ul>
-             <li>
-                  Si eres un INICIADO no deberias correr más de 2 o 3 veces por semana, tampoco realizar trotes continuos muy extensos, ni realizar entrenamientos de cuestas. tampoco sería conveniente que te preocuparas tanto en mejorar tu ritmo. Más bien, el enfoque tendrás que ubicarlo en la tácnica de carrera y el confort al correr. Básicamente tu entrenamiento se basará en corre-caminatas, pequeños trotes continuos y posteriormente podrás comenzar con trabajos de pasadas, algunos cambios de ritmo y trotes sobre diferentes superficies.  
-             </li>
+      <div class="flex-container">
+        <div>
+          <h5>PRINCIPIANTE</h5>
+             <p>
+                Si eres un INICIADO no deberias correr más de 2 o 3 veces por semana, tampoco realizar trotes continuos muy extensos, ni realizar entrenamientos de cuestas. tampoco sería conveniente que te preocuparas tanto en mejorar tu ritmo. Más bien, el enfoque tendrás que ubicarlo en la tácnica de carrera y el confort al correr. Básicamente tu entrenamiento se basará en corre-caminatas, pequeños trotes continuos y posteriormente podrás comenzar con trabajos de pasadas, algunos cambios de ritmo y trotes sobre diferentes superficies.  
+             </p>
+        </div>  
              
-             <li>
-                  Ahora bien, Si ya hace algunos meses que corres o algunos años de manera regular y entre 2 o 3 veces a la semana, sin grandes progresos podría considerarse que estás en un nivel INTERMEDIO y ya has realizado las suficientes adaptaciones oseas, articulares y musculares para realizar de 3 a 4 entrenos por semana, con trabajo de cuestas, trotes continuos demayor duración, trabajos intermitentes, o trabajos de mayor intensidad o ritmo.
-            </li>
+        <div> 
+           <h5>INTERMEDIO</h5>
+             <p>
+               Ahora bien, Si ya hace algunos meses que corres o algunos años de manera regular y entre 2 o 3 veces a la semana, sin grandes progresos podría     considerarse que estás en un nivel INTERMEDIO y ya has realizado las suficientes adaptaciones oseas, articulares y musculares para realizar de 3 a 4 entrenos por semana, con trabajo de cuestas, trotes continuos demayor duración, trabajos intermitentes, o trabajos de mayor intensidad o ritmo.
+             </p>
+        </div> 
              
-             <li> 
-                 Por último, si ya llevas varios años corriendo, de manera regular, con más de 2 o 3 entrenos por semana, realizando diferentes trabajos y habiendo logrados avances significativos en el rendimiento en distancia y ritmo, podría decirse que eres un AVANZADO y con la capacidad para entrenar 4 a 6 días por semana, además, te encontrarias apto para ejecutar minimamente 1 o 2 entrenamientos más extensos a los habituales, de por ejemplo 10k o más, y otras diversas formas de estimulos.  
-             </li>
-        </ul>    
+        <div>
+          <h5>AVANZADO</h5>
+              <p>
+                 Por último, si ya llevas varios años corriendo, de manera regular, con más de 2 o 3 entrenos por semana, realizando diferentes trabajos y habiendo logrados avances significativos en el rendimiento en distancia y ritmo, podría decirse que eres un AVANZADO y con la capacidad para entrenar 4 a 6 días por semana, además, te encontrarias apto para ejecutar minimamente 1 o 2 entrenamientos más extensos a los habituales, de por ejemplo 10k o más, y otras diversas formas de estimulos. 
+              </p>
+        </div>   
     </section>
 
     <footer>

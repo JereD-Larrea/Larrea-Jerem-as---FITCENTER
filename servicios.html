@@ -10,48 +10,60 @@
 </head>
 
 <body>
-<header class="item borde">
-  <div class="grid">
-    <nav class="item borde"> 
-      <div class="flex-container">
-        <div class="menu1-2">
-            <div class="menu"> 
-                <ul>
-                   <li> <a href="gym-center.html"> <button class> GYM CENTER  </button> </a> </li>
-                   <li> <a href="running-center.html"> <button class> RUNNING </button> </a> </li>
-                   <li> <a href="servicios.html"> <button class> SERVICIOS    </button> </a> </li> 
-                </ul> 
-            </div>
-     
-            <div class="menu-2">
-                <div class="btn-item">  
-                     <ul>
-                        <li> <a href="index.html" class="btn-ghost secundary"> Inicio </a> </li> 
-                        <li> <a href="contacto.html" class="btn-ghost secundary"> Contacto  </a> </li> 
-                        <li> <a href="nosotros.html" class="btn-ghost secundary">  Nosotros </a> </li> 
-                    </ul>
-                </div>
-            </div> 
-         </div>   
-      </div> 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/logos/minilogo.jpg" class="img-fluid" width="70px" height="70px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="gym-center.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                GYM CENTER
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="gym-center.html">Gym</a></li>
+                <li><a class="dropdown-item" href="ejercicios-por-grupo-muscular.html">Ejercicios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="running-center.html">RUNNING</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
- </div>
-           
-          <div id="logo"> <img src="/logos/logo-rojo-y-blanco.jpg"> </div>
-          <div class="titulo-y-parrafo">
-            <div id="fuente-google2">  FIT CENTER </div>
-</header>
+    
+    <div id="logo"> <img src="/logos/logo-rojo-y-blanco.jpg"> </div>   
+    <p class="h1"> <div id="fuente-google2"> FIT CENTER </div> </p> 
+  </header>
 
-   <section>
-         <h1> SERVICIOS </h1> 
+   <section class="principal-servicios">
+         <h3> SERVICIOS </h3> 
 
          <p>
            Los costos del servicio en el que estás interesado/a se sujetan de acuerdo al tipo de rutina requerida RUNNING o GYM, a la cantidad de estimulos requeridos por semana según su nivel de entrenamiento, o la cantidad de estimulos solicitados por el usted y por último a la complejidad de la misma en caso de objetivos específicos de alto rendimiento. 
          </p>
+    </section>
+    
     <br>
 
+    <section class="formulario">
          <form>
-                <h2> COMPLETE SUS DATOS Y SU SOLICITUD </h2>
+                <h3> COMPLETE SUS DATOS Y SU SOLICITUD </h3>
     <br>
                  <legend> Formulario para llenar por el usuario </legend>
     <br>
@@ -85,22 +97,22 @@
                  <option vale="4"> Cuatro veces </option>
                  <option vale="5"> Cinco o más veces </option> 
     <br>
-    <br>
-                 <legend> Nivel de entrenamiento "autopercibido" </legend>
+                 <legend id="nivel de entrenamiento"> Nivel de entrenamiento "autopercibido" </legend>
                  <select name="Nivel de entrenamiento">
                  <option vale="Principiante"> Principiante </option>    
                  <option vale="Intermedio"> Intermedio </option>
                  <option vale= "Avanzado"> Avanzado </option>
-
+    <br>
+                  
+                 <label  for="aclaraciones"> <input type="text" class="input-text"> 
+                 <div class="aclaraciones"> <h6> ACLARACIONES/OBSERVACIONES</h6> </div>
     <br>
     <br>
     <br>
                  <input type="submit" value="Enviar formulario">
          </form>
    </section>
-    <hr>
     <br>
- 
     <footer>
       <footer class="item borde">
        <nav class="navbar navbar-light.bg-light">

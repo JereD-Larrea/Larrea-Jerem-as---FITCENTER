@@ -10,67 +10,84 @@
 </head>
   
 <body>
-  <header class="item borde">
-    <div class="grid">
-      <nav class="item borde"> 
-        <div class="flex-container">
-          <div class="menu1-2">
-              <div class="menu"> 
-                  <ul>
-                     <li> <a href="gym-center.html"> <button class> GYM CENTER  </button> </a> </li>
-                     <li> <a href="running-center.html"> <button class> RUNNING </button> </a> </li>
-                     <li> <a href="servicios.html"> <button class> SERVICIOS    </button> </a> </li> 
-                  </ul> 
-              </div>
-       
-              <div class="menu-2">
-                  <div class="btn-item">  
-                       <ul>
-                          <li> <a href="index.html" class="btn-ghost secundary"> Inicio </a> </li> 
-                          <li> <a href="contacto.html" class="btn-ghost secundary"> Contacto  </a> </li> 
-                          <li> <a href="nosotros.html" class="btn-ghost secundary">  Nosotros </a> </li> 
-                      </ul>
-                  </div>
-              </div> 
-           </div>   
-        </div> 
-      </nav>
-   </div>
-             
-            <div id="logo"> <img src="/logos/logo-rojo-y-blanco.jpg"> </div>
-            <div class="titulo-y-parrafo">
-                <div id="fuente-google2"> FIT CENTER  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/logos/minilogo.jpg" class="img-fluid" width="70px" height="70px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="gym-center.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                GYM CENTER
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="gym-center.html">Gym</a></li>
+                <li><a class="dropdown-item" href="ejercicios-por-grupo-muscular.html">Ejercicios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="running-center.html">RUNNING</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="logo"> <img src="/logos/logo-rojo-y-blanco.jpg"> </div>   
+    <p class="h1"> <div id="fuente-google2"> FIT CENTER </div> </p> 
   </header>
     
     <section id="principal-gym">
-         <h1> GYM CENTER </h1>
+         <h2> GYM CENTER </h2>
         <p> Como ya es evidente, el entrenamiento de MUSCULACIÓN es muy importante para la salud general, física, mental y emocional de toda persona. Permite mejorar los niveles de fuerza y otras capacidades físicas fundamentales para todas las etapas de la vida, mejorar nuestra composicion corporal, permitiendo controlar nuestro tejido adiposo, fortaLecer musculos, elementos articulares y mejorar la densidad ósea.
         No obstante si quieres apoderarte de los beneficios la actividad o no quieres estancarte, deberás tener en cuenta varios aspectos, según la etapa en la que te encuentres.  si eres un principiante o hace mucho tiempo que no entrenas. </p> 
     </section>    
     
     <section id="categorias">
-        <ul>
-             <li> SI TE INICIAS O RETOMAS LUEGO DE VARIOS MESES: 
-                  No debés levantar grandes pesos (mancuernas, barras, cargas en maquina) ya que tu capacidad de reclutamiento (selección/utilización) de fibras musculares es muy baja, por lo que las sobrecargarias con riesgo a lesionarlas y no obtendrias resultados más rapidos. Otra recomendación sería priorizar 2 a 3 estimulos por grupo muscular, en lugar de 1 estímulo mas prolongado. Tu energía debe estar en aprender con mayor exactitud las técnicas de los ejercicios y en enfocar el/los grupos musculares intervinientes. Por último, no deberias apresurarte en la elevar los pesos, por el contrario, incrementarlos de forma gradual hará que no alternes o envicies la técnica y mejorará el control de los ejercicios.
-            </li>
+      <div class="flex-container">
+        <div>
+          <h5>PRINCIPIANTE</h5>
+            <p>  SI TE INICIAS O RETOMAS LUEGO DE VARIOS MESES: 
+                 No debés levantar grandes pesos (mancuernas, barras, cargas en maquina) ya que tu capacidad de reclutamiento (selección/utilización) de fibras musculares es muy baja, por lo que las sobrecargarias con riesgo a lesionarlas y no obtendrias resultados más rapidos. Otra recomendación sería priorizar 2 a 3 estimulos por grupo muscular, en lugar de 1 estímulo mas prolongado. Tu energía debe estar en aprender con mayor exactitud las técnicas de los ejercicios y en enfocar el/los grupos musculares intervinientes. Por último, no deberias apresurarte en la elevar los pesos, por el contrario, incrementarlos de forma gradual hará que no alternes o envicies la técnica y mejorará el control de los ejercicios.
+            </p>
+        </div>
 
-             <li> SI TE ENCUENTRAs EN NIVEL INTERMEDIO (TIENES VARIOS MESES DE ENTRENAIMENTO REGULAR):
-                  Deberias evitar ejecutar una la rutina por mucho tiempo más de un mes y medio aproximadamente, ya que te estancarás con facilidad (no genererás la supercompensación). Por otro lado, deberás prestar mas atención a las fatigas musculares o al "sobreentrenamiento", por una mala distribución de los ejercicios en la semana, por falta de descanso o por demasiados estimulos semanales. Por ejemplo, como te inicias puedes tener 3 estimulos ya que estos son de poco volumen e intendad, y por lo tanto te recuperas mas rápidamente. Pero si ya llevas un tiempo, puedes pasar a 2 estimulos semanales para incorporarle mas volumen e intendidad y asi obtener más beneficios. 
-            </li>
-
-            <li> POR ÚLTIMO, SI ERES AVANZADO (LLEVAS VARIOS AÑOS ENTRENANDO Y CON GRANDES RESULTADOS):
-                 Deberias preocuparte por mantener una rutina lo suficientemente adaptable ya sea en la estructura en si misma como en los sistemas de entrenamiento aplicados, para no estancarte y lograr esos pequeños cambios buscados (pequeños ya que como el reclutamiento de fibras está al máximo o cerca del máximo posible, cuesta mucho generar mejoras en la fuerza, resistencia o en la estética). Por otro lado, otra recomendaciónsería no descuidar aquellos aspectos que podrías no darle tanta importancia, como las entradas en calor, la ejercitación del CORE o zona media y aquellos grupos musculares que no aporten desde lo estético, pero si lo harán para un equilibrio general. 
-            </li>
-         </ul>  
-     </section>
+        <div>
+          <h5>INTERMEDIO</h5>
+             <p> SI TE ENCUENTRAs EN NIVEL INTERMEDIO (TIENES VARIOS MESES DE ENTRENAIMENTO REGULAR):
+                 Deberias evitar ejecutar una la rutina por mucho tiempo más de un mes y medio aproximadamente, ya que te estancarás con facilidad (no genererás la supercompensación). Por otro lado, deberás prestar mas atención a las fatigas musculares o al "sobreentrenamiento", por una mala distribución de los ejercicios en la semana, por falta de descanso o por demasiados estimulos semanales. Por ejemplo, como te inicias puedes tener 3 estimulos ya que estos son de poco volumen e intendad, y por lo tanto te recuperas mas rápidamente. Pero si ya llevas un tiempo, puedes pasar a 2 estimulos semanales para incorporarle mas volumen e intendidad y asi obtener más beneficios.
+            </p>
+        </div>
+       
+        <div>
+          <H5>AVANZADO</H5>
+             <p> ÚLTIMO, SI ERES AVANZADO (LLEVAS VARIOS AÑOS ENTRENANDO Y CON GRANDES RESULTADOS):
+                 Deberias preocuparte por mantener una rutina lo suficientemente adaptable ya sea en la estructura en si misma como en los sistemas de entrenamiento aplicados, para no estancarte y lograr esos pequeños cambios buscados (pequeños ya que como el reclutamiento de fibras está al máximo o cerca del máximo posible, cuesta mucho generar mejoras en la fuerza, resistencia o en la estética). Por otro lado, otra recomendaciónsería no descuidar aquellos aspectos que podrías no darle tanta importancia, como las entradas en calor, la ejercitación del CORE o zona media y aquellos grupos musculares que no aporten desde lo estético, pero si lo harán para un equilibrio general.
+             </p>
+      </div>
+      </div>
+    </section>
      
+<br>
+
      <section id="ejercicios">
         <h2>
              <a href="ejercicios-por-grupo-muscular.html" class="btn-ghost secundary"> EJERCICIOS POR GRUPO MUSCULAR</a>
        </h2>
-             <ol>
-                  <li> TIPOS DE RUTINA </li>
-            </ol>
     </section>
 
 <hr>

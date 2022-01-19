@@ -4,109 +4,8 @@ body{
      margin-right: 5px; 
      padding-left: 5px;
      padding-right: 5px;
-}
-
-.grid {
-	display: grid;
-	grid-template-rows: auto 3fr 3fr auto;
-	grid-template-columns: 25% 25% 25%;
-	grid-template-areas: 
-	"nav nav nav"
-	"header header header"
-    "section1 section2 section3"
-    "footer footer footer";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;  
-  }
-
- 
- 
-  header {
-     grid-area: header;
-  }
-  nav {
-     grid-area: nav;
-  }
-  
-  section#section1 {
-     grid-area: productos;     
-  }
-  
-  section#section3 {
-     grid-area: servicios;     
-  }
-  
-  footer {
-     grid-area: footer;
-  }
-  
-  /*Fin de GRID */
-
- 
-
-
-/*inicio Flexbox - barra de navegación */
-
-.flex-container{
-    display: inline-flex;
-    text-decoration: none;
-    background-color:black;  
-    flex-basis: 100%;
-    text-align: center;
-    margin: 2px solid white;
-    padding: 5px;
-    position: absolute;
-   
-}
-nav {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:black;
-    width: 100%;
-    position: fixed;
-    text-align: center;
-    
-   
-}
-.menu1-2{
-    text-align: center;
-}
-
- .menu {
-    display:inline-flex; 
-    text-decoration: none; 
-    text-align: center;
-   
- }
- .menu-2, ul, li, a{
-    display:inline-flex;
-    text-align: center;
-    text-decoration:none;
-   color: beige;
-   font-family:Verdana, cursive;
-   margin-top: 6px;
-}
-
-.btn-ghost.secundary{
-    background-color:#2d3047;
-    margin: 2px 2px;
-    padding: 3px 5px;
-    color: var(--white);
-    border: solid 2px white;
-    opacity: 0.8;
-    text-align: center;
-}
-
-
-section div{
-    color: coral;
-    font-size: 130%;
-    text-align: center;
-}
-
-section, div, h2{
-    color: aliceblue;
+     min-height:100vh;
+     position: relative;
 }
 
 /*moficaciones del footer*/
@@ -114,55 +13,26 @@ section, div, h2{
 .footer{
 background-color:black; 
 }
+
 .navbar-brand {
     background-color:black;
+    color: beige;
 }
  
-
-#nombre-de-instagram{
-    color: cornflowerblue;
-}
-
-
-
-
-/*html SERVICIOS - alinear IZQ texto hombre/ mujer del formulario*/
+/*html SERVICIOS -*/
 
 .hombre, .mujer{
     text-align: left;
     color: beige;
 }
 
-#parrafos h4{
-     color:brown;
-    text-align: center;
+
+.principal-servicios h3{
+    color: rgb(221, 227, 230);
 }
 
-#parrafos p{
-    color: aliceblue;
-    text-align: right;  
-}
-
-
-section h4{
-    font-size: 30px;
-}
-
-/* comienza style de gym-center ...*/
-
-#principal-gym, h1{
-    color:rgb(221, 227, 230); 
-    padding: 10px;   
-}
-#categorias ul li{
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: justify;
-}
-
-#ejercicios{
-    text-align: center;
+.principal-servicios p{
+    color: rgb(182, 182, 173);
 }
 
 form{
@@ -172,88 +42,213 @@ form{
     color:rgb(221, 227, 230);  
 }
 
+/* comienza style de gym-center ...*/
+#principal-gym{
+    color:rgb(221, 227, 230); 
+    padding: 10px;   
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    background-color:rgb(27, 28, 28);
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgba(221, 220, 226, 0.372);;
+    color: darkgrey; 
+    flex-basis: 100%;
+}
+
+.flex-container div{
+    background-color:black ;
+    margin: 5px;
+    padding: 10px;
+    text-align:justify;
+    font-size: 18px;
+    border: 2px solid rgba(221, 220, 226, 0.372);
+}
+
+.flex-container h5{
+    color:coral;
+    text-align: center;
+}
+
+#ejercicios{
+    text-align: center;
+}
+
+.btn-ghost.secundary{
+    background-color:#ff8000;
+    margin: 2px 2px;
+    padding: 3px 5px;
+    color: black;
+    border: solid 3px rgb(52, 53, 53);
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* runnning-html */
 #principal-running{
     color:rgb(221, 227, 230)
 }
 
+
 /*contacto html*/
 
-#redes p{
+#redes{
+    background-image: url(/fotos/fotogym-barra.jpg);
+    background-size: 90%;
+    }
+
+.flex-container-4{
+    display:block;
+       background-color:rgba(221, 220, 226, 0.201);
+    margin:auto auto;
+    width: auto auto;
+    height: auto auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    }
+
+.flex-container-4 .padre-redes-parrafo{
+    background-color:rgba(221, 220, 226, 0.201);
+    padding: 10px;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+}
+.redes-parrafo-2, .redes-parrafo-3 {
     color:#ff8000;
-    font-family: "comic sans MS";   
+    font-family:cursive;
 }
-#redes ul li{
-    color:crimson;
-    font-size: 150%;
+
+.padre-redes-mail{
+    color: black;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
 }
-#redes a{
-    font-size: 130%;
-    color:crimson
+.redes-mail a{
+    text-decoration: none;
+    color:#ff8000;
 }
+
 
 /* modificaciones del html nosotros - section */
+#principal-nosotros ul div{
+    color: rgb(209, 201, 201);
+}
 
-.principal-nosotros, ul, li{
-    color:cornflowerblue;
-    font-size: 100%;
+*{
+    box-sizing: border-box;
+}
+.flex-container-3{
+        display: flex;
+        background-color:rgb(27, 28, 28);
+        width: 700px;
+        margin-left:auto;
+        text-align:left;
+    }
     
+    .flex-container-3 p{
+        background-color:black ;
+        margin: 5px;
+        padding: 10px;
+        border: 2px solid rgba(221, 220, 226, 0.372);
+        font-size: 25px;
+        color: darkgrey;
+    }
+    
+ #principal-nosotros{
+    background-image:url(/fotos/fotogym-barra.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
 }
 
 /*index +  logo y titulo*/
-
-.logo-y-titulo .logo, img {
-    text-align:left;
-}
-
-.logo-rojo-y-blanco.jpg{
-    text-align:left;
-font-size: 50%;
-}
-
-h1 {
-    text-align:left;
+.container-botones{
+    text-align: center;
 }
 
 /*fuentes*/
-#fuente-google1{
-  font-family: 'Archivo Narrow', sans-serif;
+#fuente-google2{
+    font-family: 'Alfa Slab One';
+    font-size: 300%;
+    color: coral;
+    text-align: right;
+    margin-right: 95px;
 }
 
 #fuente-google2{
-  font-family: 'Alfa Slab One';
-  font-size: 350%;
-  color: coral;
-  text-align: center;
+animation-duration: 3s;
+animation-name: opacar;
+animation-iteration-count:initial;
 }
 
+@keyframes opacar {
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
+
+#logo{
+animation-duration: 3s;
+animation-name: opacar;
+animation-iteration-count:initial;
+}
+
+@keyframes opacar {
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
+
+#fuente-google1{
+  font-family: 'Archivo Narrow', sans-serif; 
+  color:beige;
+}
+
+#logo{
+    text-align:right;
+}
  
 #principal-index{
     text-align:left;
-    height: 20px;
 }
-
 
 #principal-index, .h2{
 color:beige;
 }
-#principal-index, .h3{
+#principal-index, h4{
     color: coral;
-    opacity: 0.8;
+/* elegir efecto para realizarle */
 }
 
 /* ejercicios por grupo muscular */
-#espalda{
-    color:darkslategray;
+#espalda h3{
+    color:#ff8000;
     text-align: center;
 }
 
 
+
 .container-2{
-    background-color: darkslategray;
+    background-color: rgb(52, 53, 53);
     padding: 10px;
     display: inline-flex;
     margin: 2px solid white;
     text-align: center;
+    flex-basis: 100%;
     
 }
  
@@ -277,22 +272,135 @@ color:beige;
 #item3{
     background-color:rgb(21, 19, 19);
     margin: 2px solid black;
+}
+
+/* pseudoclases - al nav */
+nav .nav-link:hover{
+font-size: 120%;
+text-decoration: none;
+color:beige;
+background-color: #e84417;
+border: 2px solid rgb(101, 96, 96);
+}
+
+.btn-ghost.secundary:active{
+    color:beige;
+    background-color:rgb(205, 205, 208);
+}
+
+.input-text:focus{
+    font-size: 22px; 
+    color: red;
+}
+
+.input-text{
+    width: 250px;
+    position: relative;
+    right: 105px;
+    top: 55px;
+    margin-bottom: 15px;
+} 
+.aclaraciones{
+    position:relative;
+    top: 50px;
+    left: 5px;
+    color: #e84417;
+}
 
 
-/*media querie*/
 
-@media (max-width: 300px){
+/*--------------media querie---------------*/
+@media (max-width: 680px) {
     .flex-container{
-flex-direction:column;
-flex-basis: 100%;
+        flex-direction: column;
+    }
 }
 
-.flex-container .menu{
-    flex-basis: 100%;
-    flex-direction:column;
+@media (max-width: 400px) {
+    .flex-container{
+        flex-direction: column;
+        padding: 2px;
+    }
+    .flex-container div{
+        margin: 2px;
+        padding: 2px;
+        font-size: 15px;
+    }
 }
 
-.flex-contaniner .menu-2{
-    flex-direction:column;
-    flex-basis: 100%;
+@media (max-width: 464px) {
+    #logo img {
+            width: 300px;
+    }
 }
+
+@media (max-width: 464px) {
+    #fuente-google2 {
+            font-size: 250%;
+            margin-right: 40px;
+    }
+}
+
+/* media querie - nosotros */
+@media (max-width: 900px) {
+    .flex-container-3{
+        width: 400px;
+    }
+    #principal-nosotros{
+        background-image: url(/fotos/fotogym-barra.jpg);
+        background-size: auto;
+    }
+}
+
+    @media (max-width: 550px) {
+        #principal-nosotros{
+            background-image: url(/fotos/fotogym-barra.jpg);
+            background-size: auto;
+        }
+    @media (max-width: 400px) {
+            .flex-container-3{
+                width: 300px;
+    }
+}
+
+/* media querie - contacto */
+@media (max-width: 320px){
+.redes-mail a{
+    font-size: 80%;
+}
+}
+    
+    /* media querie - ejercicios por grupo muscular */
+    @media (max-width: 490px) {
+        #ejercicios h2 a{
+            font-size: 15px;
+            color: brown;
+    }
+}
+    
+}
+    @media (max-width: 1200px) {    
+        .container-2 {
+            flex-direction: column;
+            padding: 3px;
+    }
+        .container-2 h4 {
+            font-size: 20px;
+            color: black;
+    }
+         .container-2 #item1 {
+             background-color: rgba(211, 211, 199, 0.9);
+         }
+         .container-2 #item2 {
+            background-color: rgba(211, 211, 199, 0.9);
+         }
+         .container-2 #item3 {
+            background-color: rgba(211, 211, 199, 0.9);
+         }
+}
+    @media (max-width: 450px) {    
+        .container-2 iframe{
+        flex-direction: column;
+        width: 60%;
+
+    }
