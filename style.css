@@ -6,6 +6,8 @@ body{
      padding-right: 5px;
      min-height:100vh;
      position: relative;
+     display: grid;
+     grid-template-rows: auto 1fr auto;
 }
 
 /*moficaciones del footer*/
@@ -17,6 +19,7 @@ background-color:black;
 .navbar-brand {
     background-color:black;
     color: beige;
+    margin-top: auto;
 }
  
 /*html SERVICIOS -*/
@@ -99,35 +102,45 @@ form{
 
 /*contacto html*/
 
-#redes{
+#redes {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 500px;
     background-image: url(/fotos/fotogym-barra.jpg);
-    background-size: 90%;
     }
+
+*{
+    box-sizing: border-box;
+}
 
 .flex-container-4{
     display:block;
-       background-color:rgba(221, 220, 226, 0.201);
     margin:auto auto;
-    width: auto auto;
+    width: auto;
     height: auto auto;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    opacity: 0.8;
     }
 
 .flex-container-4 .padre-redes-parrafo{
-    background-color:rgba(221, 220, 226, 0.201);
+    background-color:rgb(22, 22, 22);
+    text-align: center;
     padding: 10px;
     font-size: large;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #000;
+    color: beige;
+    opacity: 0-6;
 }
 .redes-parrafo-2, .redes-parrafo-3 {
     color:#ff8000;
+    text-align: left;
     font-family:cursive;
 }
 
 .padre-redes-mail{
-    color: black;
+    background-color:rgb(22, 22, 22);
+    color: beige;
     font-size: large;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
@@ -135,6 +148,7 @@ form{
 .redes-mail a{
     text-decoration: none;
     color:#ff8000;
+    font-size: 25px;
 }
 
 
@@ -364,9 +378,16 @@ border: 2px solid rgb(101, 96, 96);
 }
 
 /* media querie - contacto */
-@media (max-width: 320px){
-.redes-mail a{
-    font-size: 80%;
+
+
+@media (max-width: 680px){
+    .flex-container-4{
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+
+    .redes-mail a{
+    font-size: 15px; 
 }
 }
     
@@ -402,5 +423,5 @@ border: 2px solid rgb(101, 96, 96);
         .container-2 iframe{
         flex-direction: column;
         width: 60%;
-
     }
+}
