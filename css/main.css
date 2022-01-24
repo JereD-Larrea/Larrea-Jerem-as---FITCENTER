@@ -1,0 +1,384 @@
+body {
+  background-color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto; }
+
+/*moficaciones del footer*/
+.footer {
+  background-color: black; }
+
+.navbar-brand {
+  background-color: black;
+  color: beige;
+  margin-top: auto; }
+
+/*html SERVICIOS -*/
+.hombre, .mujer {
+  text-align: left;
+  color: beige; }
+
+.principal-servicios h3 {
+  color: #dde3e6; }
+
+.principal-servicios p {
+  color: #b6b6ad; }
+
+form {
+  color: #dde3e6; }
+
+#form-running {
+  color: #dde3e6; }
+
+/* comienza style de gym-center ...*/
+#principal-gym {
+  color: #dde3e6;
+  padding: 10px; }
+
+* {
+  box-sizing: border-box; }
+
+.flex-container {
+  display: flex;
+  background-color: #1b1c1c;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid rgba(221, 220, 226, 0.372);
+  color: darkgrey;
+  flex-basis: 100%; }
+
+.flex-container div {
+  background-color: black;
+  margin: 5px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 18px;
+  border: 2px solid rgba(221, 220, 226, 0.372); }
+
+.flex-container h5 {
+  color: coral;
+  text-align: center; }
+
+#ejercicios {
+  text-align: center; }
+
+.btn-ghost.secundary {
+  background-color: #ff8000;
+  margin: 2px 2px;
+  padding: 3px 5px;
+  color: black;
+  border: solid 3px #343535;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.8; }
+
+/* runnning-html */
+#principal-running {
+  color: #dde3e6; }
+
+/*contacto html*/
+#redes {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 500px;
+  background-image: url(/fotos/fotogym-barra.jpg); }
+
+* {
+  box-sizing: border-box; }
+
+.flex-container-4 {
+  display: block;
+  margin: auto auto;
+  width: auto;
+  height: auto auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  margin-bottom: auto;
+  border: 10px solid #1b1c1c; }
+
+.padre-redes-parrafo {
+  border: 2px solid #1b1c1c;
+  background-color: #343535;
+  opacity: 0.8; }
+
+.redes-parrafo-1 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1; }
+
+.redes-parrafo-2 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  color: #ff8000; }
+
+.redes-parrafo-3 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  color: #ff8000; }
+
+.redes-mail1 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  margin-top: 50px;
+  position: relative;
+  margin-left: -20%;
+  margin-right: auto; }
+
+.redes-mail2 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  border: 3px solid #1b1c1c;
+  background-color: coral;
+  position: relative;
+  margin-left: 3%;
+  margin-right: 3%; }
+
+.redes-mail2 a {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  font-size: 25px;
+  color: black; }
+
+/* modificaciones del html nosotros - section */
+#principal-nosotros ul div {
+  color: #d1c9c9; }
+
+* {
+  box-sizing: border-box; }
+
+.flex-container-3 {
+  display: flex;
+  background-color: #1b1c1c;
+  width: 700px;
+  margin-left: auto;
+  text-align: left; }
+
+.flex-container-3 p {
+  background-color: black;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid rgba(221, 220, 226, 0.372);
+  font-size: 25px;
+  color: darkgrey; }
+
+#principal-nosotros {
+  background-image: url(/fotos/fotogym-barra.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%; }
+
+/*index +  logo y titulo*/
+.container-botones {
+  text-align: center; }
+
+/*fuentes*/
+#fuente-google2 {
+  font-family: 'Alfa Slab One';
+  font-size: 300%;
+  color: coral;
+  text-align: right;
+  margin-right: 95px; }
+
+#fuente-google2 {
+  animation-duration: 3s;
+  animation-name: opacar;
+  animation-iteration-count: initial; }
+
+@keyframes opacar {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#logo {
+  animation-duration: 3s;
+  animation-name: opacar;
+  animation-iteration-count: initial; }
+
+@keyframes opacar {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#fuente-google1 {
+  font-family: 'Archivo Narrow', sans-serif;
+  color: beige; }
+
+#logo {
+  text-align: right; }
+
+#principal-index {
+  text-align: left; }
+
+#principal-index, .h2 {
+  color: beige; }
+
+#principal-index, h4 {
+  color: coral;
+  /* elegir efecto para realizarle */ }
+
+/* ejercicios por grupo muscular */
+#espalda h3 {
+  color: #ff8000;
+  text-align: center; }
+
+.container-2 {
+  background-color: #343535;
+  padding: 10px;
+  display: inline-flex;
+  margin: 2px solid white;
+  text-align: center;
+  flex-basis: 100%; }
+
+.item {
+  margin: 2px solid white;
+  padding: 15px;
+  color: white;
+  display: inline-block; }
+
+#item1 {
+  background-color: dimgray;
+  margin: 2px solid black; }
+
+#item2 {
+  background-color: #343131;
+  margin: 2px solid black; }
+
+#item3 {
+  background-color: #151313;
+  margin: 2px solid black; }
+
+/* pseudoclases - al nav */
+nav .nav-link:hover {
+  font-size: 120%;
+  text-decoration: none;
+  color: beige;
+  background-color: #e84417;
+  border: 2px solid #656060; }
+
+.btn-ghost.secundary:active {
+  color: beige;
+  background-color: #cdcdd0; }
+
+.input-text:focus {
+  font-size: 22px;
+  color: red; }
+
+.input-text {
+  width: 250px;
+  position: relative;
+  right: 105px;
+  top: 55px;
+  margin-bottom: 15px; }
+
+.aclaraciones {
+  position: relative;
+  top: 50px;
+  left: 5px;
+  color: #e84417; }
+
+/*--------------media querie---------------*/
+@media (max-width: 680px) {
+  .flex-container {
+    flex-direction: column; } }
+
+@media (max-width: 400px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 2px; }
+  .flex-container div {
+    margin: 2px;
+    padding: 2px;
+    font-size: 15px; } }
+
+@media (max-width: 464px) {
+  #logo img {
+    width: 300px; } }
+
+@media (max-width: 464px) {
+  #fuente-google2 {
+    font-size: 250%;
+    margin-right: 40px; } }
+
+/* media querie - nosotros */
+@media (max-width: 900px) {
+  .flex-container-3 {
+    width: 400px; }
+  #principal-nosotros {
+    background-image: url(/fotos/fotogym-barra.jpg);
+    background-size: auto; } }
+
+@media (max-width: 550px) {
+  #principal-nosotros {
+    background-image: url(/fotos/fotogym-barra.jpg);
+    background-size: auto; } }
+
+@media (max-width: 550px) and (max-width: 400px) {
+  .flex-container-3 {
+    width: 300px; } }
+
+@media (max-width: 550px) {
+  /* media querie - contacto */ }
+
+@media (max-width: 550px) and (max-width: 680px) {
+  .flex-container-4 {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .redes-mail2 a {
+    font-size: 15px; } }
+
+@media (max-width: 550px) {
+  /* media querie - ejercicios por grupo muscular */ }
+
+@media (max-width: 550px) and (max-width: 490px) {
+  #ejercicios h2 a {
+    font-size: 15px;
+    color: brown; } }
+
+@media (max-width: 1200px) {
+  .container-2 {
+    flex-direction: column;
+    padding: 3px; }
+  .container-2 h4 {
+    font-size: 20px;
+    color: black; }
+  .container-2 #item1 {
+    background-color: rgba(211, 211, 199, 0.9); }
+  .container-2 #item2 {
+    background-color: rgba(211, 211, 199, 0.9); }
+  .container-2 #item3 {
+    background-color: rgba(211, 211, 199, 0.9); } }
+
+@media (max-width: 450px) {
+  .container-2 iframe {
+    flex-direction: column;
+    width: 60%; } }

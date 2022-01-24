@@ -109,6 +109,7 @@ form{
     background-image: url(/fotos/fotogym-barra.jpg);
     }
 
+
 *{
     box-sizing: border-box;
 }
@@ -120,37 +121,66 @@ form{
     height: auto auto;
     margin-left: 25%;
     margin-right: 25%;
-    opacity: 0.8;
+    margin-top: 5%;
+    margin-bottom: auto;
+    border: 10px solid rgb(27, 28, 28);
+
+    
     }
 
-.flex-container-4 .padre-redes-parrafo{
-    background-color:rgb(22, 22, 22);
+.padre-redes-parrafo{
+    border: 2px solid rgb(27, 28, 28);
+    background-color: rgb(52, 53, 53);
+    opacity: 0.8;
+}
+
+@mixin bloqueContacto {
     text-align: center;
     padding: 10px;
     font-size: large;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: beige;
-    opacity: 0-6;
-}
-.redes-parrafo-2, .redes-parrafo-3 {
-    color:#ff8000;
-    text-align: left;
-    font-family:cursive;
+    color: wheat;
+    z-index: 1;
+
 }
 
-.padre-redes-mail{
-    background-color:rgb(22, 22, 22);
-    color: beige;
-    font-size: large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
-}
-.redes-mail a{
-    text-decoration: none;
-    color:#ff8000;
-    font-size: 25px;
+.redes-parrafo-1{
+    @include bloqueContacto;
+
 }
 
+.redes-parrafo-2{
+    @include bloqueContacto;  
+    color: #ff8000; 
+}
+
+.redes-parrafo-3{
+    @include bloqueContacto;  
+    color: #ff8000;
+}
+
+.redes-mail1{
+    @include bloqueContacto; 
+    margin-top: 50px;
+    position: relative;
+    margin-left: -20%;
+    margin-right: auto;
+}
+
+.redes-mail2{
+    @include bloqueContacto;
+    border: 3px solid rgb(27, 28, 28);
+    background-color:coral ;
+    position: relative;
+    margin-left:3%;
+    margin-right:3%;
+}
+
+.redes-mail2 a{
+    @include bloqueContacto;  
+    font-size:25px;
+    color: black;   
+}
 
 /* modificaciones del html nosotros - section */
 #principal-nosotros ul div{
@@ -386,7 +416,7 @@ border: 2px solid rgb(101, 96, 96);
         margin-right: 5%;
         }
 
-    .redes-mail a{
+    .redes-mail2 a{
     font-size: 15px; 
 }
 }
@@ -424,4 +454,4 @@ border: 2px solid rgb(101, 96, 96);
         flex-direction: column;
         width: 60%;
     }
-}
+    }
