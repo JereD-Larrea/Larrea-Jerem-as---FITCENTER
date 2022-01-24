@@ -9,6 +9,105 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto; }
 
+.redes-parrafo-1 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1; }
+
+.redes-parrafo-2 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  color: #ff8000; }
+
+.redes-parrafo-3 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  color: #ff8000; }
+
+.redes-mail1 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  margin-top: 50px;
+  position: relative;
+  margin-left: -20%;
+  margin-right: auto; }
+
+.redes-mail2 {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  border: 3px solid #1b1c1c;
+  background-color: coral;
+  position: relative;
+  margin-left: 3%;
+  margin-right: 3%; }
+
+.redes-mail2 a {
+  text-align: center;
+  padding: 10px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: wheat;
+  z-index: 1;
+  font-size: 25px;
+  color: black; }
+
+.card, .ucard {
+  background-color: black;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: none; }
+
+.avatar, .ucard > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px; }
+
+.title, .ucard > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 12px;
+  opacity: 0.85; }
+
+.main-title {
+  border-left: 5px solid #dde3e6; }
+
+.small, .ucard > small {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.75; }
+
+.ucard {
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  margin-left: 76%;
+  margin-bottom: 20%;
+  padding: 15px;
+  color: blanchedalmond; }
+  .ucard > h3 {
+    color: blanchedalmond; }
+  .ucard > small {
+    color: blanchedalmond; }
+
 /*moficaciones del footer*/
 .footer {
   background-color: black; }
@@ -107,67 +206,6 @@ form {
   background-color: #343535;
   opacity: 0.8; }
 
-.redes-parrafo-1 {
-  text-align: center;
-  padding: 10px;
-  font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: wheat;
-  z-index: 1; }
-
-.redes-parrafo-2 {
-  text-align: center;
-  padding: 10px;
-  font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: wheat;
-  z-index: 1;
-  color: #ff8000; }
-
-.redes-parrafo-3 {
-  text-align: center;
-  padding: 10px;
-  font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: wheat;
-  z-index: 1;
-  color: #ff8000; }
-
-.redes-mail1 {
-  text-align: center;
-  padding: 10px;
-  font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: wheat;
-  z-index: 1;
-  margin-top: 50px;
-  position: relative;
-  margin-left: -20%;
-  margin-right: auto; }
-
-.redes-mail2 {
-  text-align: center;
-  padding: 10px;
-  font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: wheat;
-  z-index: 1;
-  border: 3px solid #1b1c1c;
-  background-color: coral;
-  position: relative;
-  margin-left: 3%;
-  margin-right: 3%; }
-
-.redes-mail2 a {
-  text-align: center;
-  padding: 10px;
-  font-size: large;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: wheat;
-  z-index: 1;
-  font-size: 25px;
-  color: black; }
-
 /* modificaciones del html nosotros - section */
 #principal-nosotros ul div {
   color: #d1c9c9; }
@@ -237,14 +275,16 @@ form {
   text-align: right; }
 
 #principal-index {
+  max-height: 280px; }
+
+#principal-index {
   text-align: left; }
 
 #principal-index, .h2 {
   color: beige; }
 
 #principal-index, h4 {
-  color: coral;
-  /* elegir efecto para realizarle */ }
+  color: coral; }
 
 /* ejercicios por grupo muscular */
 #espalda h3 {
@@ -364,7 +404,7 @@ nav .nav-link:hover {
     font-size: 15px;
     color: brown; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 550px) and (max-width: 1200px) {
   .container-2 {
     flex-direction: column;
     padding: 3px; }
@@ -378,7 +418,7 @@ nav .nav-link:hover {
   .container-2 #item3 {
     background-color: rgba(211, 211, 199, 0.9); } }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) and (max-width: 450px) {
   .container-2 iframe {
     flex-direction: column;
     width: 60%; } }
