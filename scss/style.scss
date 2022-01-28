@@ -1,3 +1,6 @@
+ @import "componentsStyle/_MapsMixinExtend";
+
+
 body{
     background-color: black; 
      margin-left: 5px;
@@ -8,146 +11,45 @@ body{
      position: relative;
      display: grid;
      grid-template-rows: auto 1fr auto;
+     padding-top: 75px;
     }
-
-// APLICO MIXIN AL HTML CONTACTO
-@mixin bloqueContacto {
-    text-align: center;
-    padding: 10px;
-    font-size: large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: wheat;
-    z-index: 1;
-}
-
-.redes-parrafo-1{
-    @include bloqueContacto;
-}
-
-.redes-parrafo-2{
-    @include bloqueContacto;  
-    color: #ff8000; 
-}
-
-.redes-parrafo-3{
-    @include bloqueContacto;  
-    color: #ff8000;
-}
-
-.redes-mail1{
-    @include bloqueContacto; 
-    margin-top: 50px;
-    position: relative;
-    margin-left: -20%;
-    margin-right: auto;
-}
-
-.redes-mail2{
-    @include bloqueContacto;
-    border: 3px solid rgb(27, 28, 28);
-    background-color:coral;
-    position: relative;
-    margin-left:3%;
-    margin-right:3%;
-}
-
-.redes-mail2 a{
-    @include bloqueContacto;  
-    font-size:25px;
-    color: black;  
-}
-
-
-// APLICO EXTEND (CARD) AL INDEX HTML
-.card {
-    background-color:black;
-    border-radius: 4px;
-    padding: 16px;
-    box-shadow: none;
-}
-
-.avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 120px;
-}
-
-.title {
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 12px;
-    opacity: 0.85;
-}
-
-.main-title {
-    border-left: 5px solid rgb(221, 227, 230);
-}
-
-.small{
-    font-weight: 400;
-    font-size: 12px;
-    opacity: 0.75;
-}
-
-.ucard{
-    @extend .card;
-    max-width: 300px;
-    text-align: center;
-    position: relative;
-    margin-left: 76%;
-    margin-bottom: 20%;
-    padding: 15px;
-    color:blanchedalmond;
-    >img {
-         @extend .avatar;
-    }
-    >h3 {
-        @extend .title;
-        color:blanchedalmond;
-    }
-    >small { 
-        @extend .small;
-        color:blanchedalmond;
-    }
-}
-
 
 /*moficaciones del footer*/
 .footer{
-background-color:black; 
-}
+    background-color:black; 
+    }
 .navbar-brand {
     background-color:black;
     color: beige;
     margin-top: auto;
-}
+    }
  
 /*html SERVICIOS -*/
 .hombre, .mujer{
     text-align: left;
     color: beige;
-}
+    }
 
 .principal-servicios h3{
     color: rgb(221, 227, 230);
-}
+    }
 
 .principal-servicios p{
     color: rgb(182, 182, 173);
-}
+    }
 
 form{
     color:rgb(221, 227, 230);
-}
+    }
 #form-running{
     color:rgb(221, 227, 230);  
-}
+    }
 
-/* comienza style de gym-center ...*/
+/* html gym-center ...*/
 #principal-gym{
     color:rgb(221, 227, 230); 
     padding: 10px;   
-}
+    }
 
 *{
     box-sizing: border-box;
@@ -160,7 +62,7 @@ form{
     border: 2px solid rgba(221, 220, 226, 0.372);;
     color: darkgrey; 
     flex-basis: 100%;
-}
+    }
 
 .flex-container div{
     background-color:black ;
@@ -169,16 +71,16 @@ form{
     text-align:justify;
     font-size: 18px;
     border: 2px solid rgba(221, 220, 226, 0.372);
-}
+    }
 
 .flex-container h5{
     color:coral;
     text-align: center;
-}
+    }
 
 #ejercicios{
     text-align: center;
-}
+    }
 
 .btn-ghost.secundary{
     background-color:#ff8000;
@@ -189,23 +91,21 @@ form{
     text-align: center;
     text-decoration: none;
     opacity: 0.8;
-}
+    }
 
-/* runnning-html */
+/* html runnning-center */
 #principal-running{
     color:rgb(221, 227, 230)
-}
+    }
 
-
-/*contacto html*/
-
+/*html contacto */
 #redes {
     margin-top: auto;
     margin-bottom: auto;
     height: 500px;
     background-image: url(/fotos/fotogym-barra.jpg);
+    width: 100%;
     }
-
 
 *{
     box-sizing: border-box;
@@ -213,11 +113,10 @@ form{
 
 .flex-container-4{
     display:block;
-    margin:auto auto;
-    width: auto;
-    height: auto auto;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
     margin-bottom: auto;
     border: 10px solid rgb(27, 28, 28);
@@ -227,59 +126,60 @@ form{
     border: 2px solid rgb(27, 28, 28);
     background-color: rgb(52, 53, 53);
     opacity: 0.8;
-}
+    }
 
 
-/* modificaciones del html nosotros - section */
+/*  html nosotros  */
 #principal-nosotros ul div{
     color: rgb(209, 201, 201);
-}
+    }
 
 *{
     box-sizing: border-box;
 }
 .flex-container-3{
-        display: flex;
-        background-color:rgb(27, 28, 28);
-        width: 700px;
-        margin-left:auto;
-        text-align:left;
+    display: flex;
+    background-color:rgb(27, 28, 28);
+    width: 700px;
+    margin-left:auto;
+    text-align:left;
     }
     
-    .flex-container-3 p{
-        background-color:black ;
-        margin: 5px;
-        padding: 10px;
-        border: 2px solid rgba(221, 220, 226, 0.372);
-        font-size: 25px;
-        color: darkgrey;
+.flex-container-3 p{
+    background-color:black ;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid rgba(221, 220, 226, 0.372);
+    font-size: 25px;
+    color: darkgrey;
     }
     
  #principal-nosotros{
     background-image:url(/fotos/fotogym-barra.jpg);
     background-repeat: no-repeat;
     background-size: 50%;
-}
+    }
 
-/*index +  logo y titulo*/
+/*html index - botones (abajo)*/
 .container-botones{
     text-align: center;
-}
+    }
 
-/*fuentes*/
+/*fuente (logo)*/
 #fuente-google2{
     font-family: 'Alfa Slab One';
     font-size: 300%;
     color: coral;
     text-align: right;
     margin-right: 95px;
-}
+    }
 
+// Animaciones al logo y titulo principal
 #fuente-google2{
-animation-duration: 3s;
-animation-name: opacar;
-animation-iteration-count:initial;
-}
+    animation-duration: 3s;
+    animation-name: opacar;
+    animation-iteration-count:initial;
+    }
 
 @keyframes opacar {
 0%{
@@ -291,10 +191,10 @@ animation-iteration-count:initial;
 }
 
 #logo{
-animation-duration: 3s;
-animation-name: opacar;
-animation-iteration-count:initial;
-}
+    animation-duration: 3s;
+    animation-name: opacar;
+    animation-iteration-count:initial;  
+    }
 
 @keyframes opacar {
 0%{
@@ -305,39 +205,65 @@ animation-iteration-count:initial;
 }
 }
 
-#fuente-google1{
-  font-family: 'Archivo Narrow', sans-serif; 
-  color:beige;
-}
 
 #logo{
     text-align:right;
-}
+    }
+
+// Continuan modificaciones del html index (main)
+.container-index{
+    display: inline-flex;
+    width: 100%;
+    height: 230px;
+    }
 
 #principal-index{
-    max-height: 280px;
-}
- 
-#principal-index{
-    text-align:left;
-}
-
-
+     text-align:left;
+     width: 50%;
+    }
 
 #principal-index, .h2{
-color:beige;
-}
-#principal-index, h4{
+    color:beige;
+    }
+
+#principal-index, h3{
     color: coral;
-}
+    }
+
+// .. html index 
+ #section-card{
+     display: inline-flex;
+     width: 35%;
+     text-align: center;
+     position: relative;
+     margin-left: 15%;
+    }
+ 
+#parrafos{
+    display: inline-block;
+    padding: 70px;
+    }
+
+// html index - Fuente 1 (texto)
+#fuente-google1{
+    font-family: 'Archivo Narrow', sans-serif; 
+    color:beige; 
+    padding: 20px;
+    }
+
+#frase-principal-index{
+    color: coral;
+    text-align: left; 
+    padding-top: 15px;
+    padding-bottom: 10px;
+    }
 
 
-/* ejercicios por grupo muscular */
+/* html ejercicios por grupo muscular */
 #espalda h3{
     color:#ff8000;
     text-align: center;
-}
-
+    }
 
 
 .container-2{
@@ -346,50 +272,49 @@ color:beige;
     display: inline-flex;
     margin: 2px solid white;
     text-align: center;
-    flex-basis: 100%;
-    
-}
+    max-width: 100%;
+    }
  
 .item{
     margin: 2px solid white; 
     padding: 15px;
     color:white;
     display: inline-block;
-}
+    }
 
 #item1{
     background-color:dimgray;
     margin: 2px solid black;
-}
+    }
 
 #item2{
     background-color:rgb(52, 49, 49);
     margin: 2px solid black;
-}
+    }
 
 #item3{
     background-color:rgb(21, 19, 19);
     margin: 2px solid black;
-}
+    }
 
 /* pseudoclases - al nav */
 nav .nav-link:hover{
-font-size: 120%;
-text-decoration: none;
-color:beige;
-background-color: #e84417;
-border: 2px solid rgb(101, 96, 96);
-}
+    font-size: 120%;
+    text-decoration: none;
+    color:beige;
+    background-color: #e84417;
+    border: 2px solid rgb(101, 96, 96);
+    }
 
 .btn-ghost.secundary:active{
     color:beige;
     background-color:rgb(205, 205, 208);
-}
+    }
 
 .input-text:focus{
     font-size: 22px; 
     color: red;
-}
+    }
 
 .input-text{
     width: 250px;
@@ -397,112 +322,16 @@ border: 2px solid rgb(101, 96, 96);
     right: 105px;
     top: 55px;
     margin-bottom: 15px;
-} 
+    } 
 .aclaraciones{
     position:relative;
     top: 50px;
     left: 5px;
     color: #e84417;
-}
+    }
+
+// importo media querie
+@import "componentsStyle/_mediaQuerie";
 
 
 
-/*--------------media querie---------------*/
-@media (max-width: 680px) {
-    .flex-container{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 400px) {
-    .flex-container{
-        flex-direction: column;
-        padding: 2px;
-    }
-    .flex-container div{
-        margin: 2px;
-        padding: 2px;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 464px) {
-    #logo img {
-            width: 300px;
-    }
-}
-
-@media (max-width: 464px) {
-    #fuente-google2 {
-            font-size: 250%;
-            margin-right: 40px;
-    }
-}
-
-/* media querie - nosotros */
-@media (max-width: 900px) {
-    .flex-container-3{
-        width: 400px;
-    }
-    #principal-nosotros{
-        background-image: url(/fotos/fotogym-barra.jpg);
-        background-size: auto;
-    }
-}
-
-    @media (max-width: 550px) {
-        #principal-nosotros{
-            background-image: url(/fotos/fotogym-barra.jpg);
-            background-size: auto;
-        }
-    @media (max-width: 400px) {
-            .flex-container-3{
-                width: 300px;
-    }
-}
-
-/* media querie - contacto */
-@media (max-width: 680px){
-    .flex-container-4{
-        margin-left: 5%;
-        margin-right: 5%;
-        }
-
-    .redes-mail2 a{
-    font-size: 15px;    
-    }
-}
-    
-    /* media querie - ejercicios por grupo muscular */
-    @media (max-width: 490px) {
-        #ejercicios h2 a{
-            font-size: 15px;
-            color: brown;
-    }
-} 
-
-    @media (max-width: 1200px) {    
-        .container-2 {
-            flex-direction: column;
-            padding: 3px;
-    }
-        .container-2 h4 {
-            font-size: 20px;
-            color: black;
-    }
-         .container-2 #item1 {
-             background-color: rgba(211, 211, 199, 0.9);
-    }
-         .container-2 #item2 {
-            background-color: rgba(211, 211, 199, 0.9);
-    }
-         .container-2 #item3 {
-            background-color: rgba(211, 211, 199, 0.9);
-    }
-}
-    @media (max-width: 450px) {    
-        .container-2 iframe{
-        flex-direction: column;
-        width: 60%; }
-    }
-}

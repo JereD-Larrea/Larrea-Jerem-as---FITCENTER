@@ -1,0 +1,129 @@
+// gym center html y running center html
+@media (max-width: 680px) {
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .flex-container{
+        flex-direction: column;
+        padding: 2px;
+    }
+    .flex-container div{
+        margin: 2px;
+        padding: 2px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 464px) {
+    #logo img {
+            width: 300px;
+    }
+}
+
+@media (max-width: 464px) {
+    #fuente-google2 {
+            font-size: 250%;
+            margin-right: 40px;
+    }
+}
+
+/*  nosotros html */
+@media (max-width: 900px) {
+    .flex-container-3{
+        width: 400px;
+    }
+    #principal-nosotros{
+        background-image: url(/fotos/fotogym-barra.jpg);
+        background-size: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    #principal-nosotros{
+        background-image: url(/fotos/fotogym-barra.jpg);
+        background-size: auto;
+        }
+}
+@media (max-width: 400px) {
+            .flex-container-3{
+                width: 300px;
+    }
+}
+
+/* contacto html */
+@media (max-width: 450px){
+    .flex-container-4{
+        width: 100%;
+        border: 2px solid wheat;
+        }
+
+    .redes-mail2 a{
+        font-size: 15px;    
+    }
+}
+    
+    /* ejercicios por grupo muscular html */
+@media (max-width: 1170px) {    
+    .container-2 {
+        flex-direction: column;
+        padding: 3px;
+    }
+    .container-2 iframe{
+        flex-direction: column;
+        width: 60%; }
+
+    .container-2 h4 {
+        font-size: 20px;
+        color: black;
+    }
+    .container-2 #item1 {
+        background-color: rgba(211, 211, 199, 0.9);
+    }
+    .container-2 #item2 {
+        background-color: rgba(211, 211, 199, 0.9);
+    }
+    .container-2 #item3 {
+        background-color: rgba(211, 211, 199, 0.9);
+    }
+}
+//  @media (min-width: 1169px) {    
+//     .container-2 iframe{
+//         flex-direction: column;
+//         width: 60%; }
+//     }
+// }
+
+// Index html
+@media (max-width: 829px){
+    .container-index{
+        display: block;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        margin-top: 10%;
+        width: 100%; 
+    }
+
+    #principal-index{
+    width: 90%;
+    }
+
+    #section-card{
+        width: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        border: 2px solid wheat;
+    }
+    .ucard{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
